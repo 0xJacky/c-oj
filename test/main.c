@@ -7,19 +7,15 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
-int main(int argc, const char * argv[]) {
-    int input[3];
-    char s = '\0';
+int main() {
     
-    for (int i = 0; i < 3 && s != '\n'; i++) {
-        scanf("%d", input+i);
-        s = getchar();
-    }
+    char a[10] = {'\0'}, b[] = {'A', 'B', 'C'};
     
-    printf("%d\n", input[0]);
-    printf("%d\n", input[1]);
-    printf("%d\n", input[2]);
+    scanf("%s", a);
+    
+    printf("%d\n", strcmp(a, b));
     
     return 0;
 }
