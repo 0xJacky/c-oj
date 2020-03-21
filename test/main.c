@@ -10,12 +10,11 @@
 #include <string.h>
 
 int main() {
+    char a;
     
-    char a[10] = {'\0'}, b[] = {'A', 'B', 'C'};
+    scanf("%c", &a);
     
-    scanf("%s", a);
-    
-    printf("%d\n", strcmp(a, b));
+    printf("%d\n", a);
     
     return 0;
 }
