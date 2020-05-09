@@ -44,7 +44,7 @@
 
 int isLeapYear(int y);
 
-int main(int argc, const char * argv[]) {
+int main() {
     int t, y, m, d, x;
     
         // 定义每个月的天数

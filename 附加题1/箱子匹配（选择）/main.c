@@ -69,15 +69,16 @@ int main() {
 }
 
 int *sort(int array[]) {
-    int t;
-    for (int i=0; i<N-1; i++) {
-        for (int j=0; j<N-1-i; j++) {
-            if (array[j] > array [j+1]) {
-                t = array[j+1];
-                array[j+1] = array[j];
-                array[j] = t;
-            }
+    int p, c;
+    // 冒泡排序超时了 要用插入排序
+    for (int i = 1; i < N; i++) {
+        p = i - 1;
+        c = array[i];
+        while ( p >= 0 && array[p] > c) {
+            array[p+1] = array[p];
+            p--;
         }
+        array[p+1] = c;
     }
     return array;
 }
