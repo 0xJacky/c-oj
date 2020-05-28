@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85033A3624135D1A0033D484"
-               BuildableName = "test"
-               BlueprintName = "test"
+               BlueprintIdentifier = "85033A4C24136AE10033D484"
+               BuildableName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
+               BlueprintName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
                ReferencedContainer = "container:c-oj.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85033A3624135D1A0033D484"
-            BuildableName = "test"
-            BlueprintName = "test"
+            BlueprintIdentifier = "85033A4C24136AE10033D484"
+            BuildableName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
+            BlueprintName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
             ReferencedContainer = "container:c-oj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85033A3624135D1A0033D484"
-            BuildableName = "test"
-            BlueprintName = "test"
+            BlueprintIdentifier = "85033A4C24136AE10033D484"
+            BuildableName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
+            BlueprintName = "&#x7bb1;&#x5b50;&#x5339;&#x914d;&#xff08;&#x9009;&#x62e9;&#xff09;"
             ReferencedContainer = "container:c-oj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
