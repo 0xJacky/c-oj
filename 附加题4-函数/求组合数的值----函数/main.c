@@ -28,14 +28,18 @@
  2
  */
 
+#define max(a,b) a > b ? a : b
 #include <stdio.h>
 
+float a[100];
+int cache = 1;
+
 float fact(int n) {
-    float a[1000];
     a[0] = 1;
-    for(int i = 1; i <= n; i++) {
+    for(int i = cache; i <= n; i++) {
         a[i] = a[i-1] * i;
     }
+    cache = max(cache, n);
     return a[n];
 }
 

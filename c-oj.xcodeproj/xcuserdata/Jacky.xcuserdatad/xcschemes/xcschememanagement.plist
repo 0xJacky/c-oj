@@ -14,35 +14,70 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>亲和数（函数）.xcscheme_^#shared#^_</key>
+		<key>一、计算操场的面积.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>11</integer>
 		</dict>
-		<key>多人运动.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>弦截法求根.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>排队游戏（字符串）.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>数组奇偶排序（数组）.xcscheme_^#shared#^_</key>
+		<key>七、查验身份证.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
-		<key>求共同元素（数组）.xcscheme_^#shared#^_</key>
+		<key>三、统计A.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>二、满减活动.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>五、绘制棒图.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>亲和数（函数）.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>六、矩阵操作.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>四、求中位数.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>弦截法求根.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>排队游戏（字符串）.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>数组奇偶排序（数组）.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>求共同元素（数组）.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>求组合数的值----函数.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>矩阵运算.xcscheme_^#shared#^_</key>
 		<dict>
@@ -57,12 +92,17 @@
 		<key>约瑟夫环.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>20</integer>
 		</dict>
 		<key>课堂练习1.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>13</integer>
+		</dict>
+		<key>身份证升位（字符串）.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -638,6 +678,21 @@
 			<true/>
 		</dict>
 		<key>85B47AD72417F9B6003CACCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85CC7CD72456BC9300D941F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85D1AB5424B5B72500371213</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85D1AB8024B5BF1F00371213</key>
 		<dict>
 			<key>primary</key>
 			<true/>
