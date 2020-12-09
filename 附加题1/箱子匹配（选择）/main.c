@@ -46,25 +46,25 @@
 int *sort(int array[]);
 
 int main() {
-    
     int t, a[3], b[3];
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d %d %d", &a[0], &a[1], &a[2]);
         scanf("%d %d %d", &b[0], &b[1], &b[2]);
-        
+
         sort(a);
         sort(b);
-        
-        if ((a[0] <= b[0] && a[1] <= b[1] && a[2] <= b[2]) || (b[0] <= a[0] && b[1] <= a[1] && b[2] <= a[2])) {
+
+        if ((a[0] <= b[0] && a[1] <= b[1] && a[2] <= b[2]) ||
+            (b[0] <= a[0] && b[1] <= a[1] && b[2] <= a[2])) {
             printf("yes\n");
         } else {
             printf("no\n");
         }
     }
-    
+
     return 0;
 }
 
@@ -74,11 +74,11 @@ int *sort(int array[]) {
     for (int i = 1; i < N; i++) {
         p = i - 1;
         c = array[i];
-        while ( p >= 0 && array[p] > c) {
-            array[p+1] = array[p];
+        while (p >= 0 && array[p] > c) {
+            array[p + 1] = array[p];
             p--;
         }
-        array[p+1] = c;
+        array[p + 1] = c;
     }
     return array;
 }

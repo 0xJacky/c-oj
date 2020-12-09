@@ -25,11 +25,10 @@
 #include <stdio.h>
 
 int main() {
-    
     char grade;
-    
+
     scanf("%c", &grade);
-    
+
     switch (grade) {
         case 'A':
             printf("一个学期的努力给你带来了应有的收获");
@@ -46,8 +45,8 @@ int main() {
             printf("一次失败代表不了什么，请从头再来");
             break;
     }
-    
+
     printf("\n");
-    
+
     return 0;
 }

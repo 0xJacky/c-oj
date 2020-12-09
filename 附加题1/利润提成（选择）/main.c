@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  利润提成（选择）
-    //
-    //  Created by Jacky on 2020/3/7.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  利润提成（选择）
+//
+//  Created by Jacky on 2020/3/7.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*
  题目描述
@@ -33,7 +33,7 @@
 int main() {
     int profits, bonus = 0;
     scanf("%d", &profits);
-    
+
     switch (profits / 100000) {
         default:
         case 10:
@@ -56,13 +56,13 @@ int main() {
         case 1:
             bonus += 3 * (profits - 100000) / 40;
             profits = 100000;
-            
+
         case 0:
             bonus += profits / 10;
             break;
     }
-    
+
     printf("%d\n", bonus);
-    
+
     return 0;
 }

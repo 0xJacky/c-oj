@@ -25,13 +25,13 @@
  1
  */
 
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 int main() {
     int p, row, col, min = INT_MAX, max = INT_MIN;
     scanf("%d %d", &row, &col);
-    
+
     for (int i = 0; i < row * col; i++) {
         scanf("%d", &p);
         if (p < min) {
@@ -41,8 +41,8 @@ int main() {
             max = p;
         }
     }
-    
+
     printf("%d\n%d\n", max, min);
-    
+
     return 0;
 }

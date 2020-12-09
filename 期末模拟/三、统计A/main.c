@@ -28,13 +28,13 @@
 int main() {
     char tmp = '\0';
     int a = 0;
-    
+
     while (tmp != '#') {
         scanf("%c", &tmp);
-        if(tmp == 'A' || tmp == 'a') a++;
+        if (tmp == 'A' || tmp == 'a') a++;
     }
-    
+
     printf("%d\n", a);
-    
+
     return 0;
 }

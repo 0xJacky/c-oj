@@ -25,20 +25,20 @@
   两点之间的距离为3.111
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double a[4], d;
-    
+
     for (int i = 0; i < 4; i++) {
-        scanf("%lf", a+i);
+        scanf("%lf", a + i);
     }
-    
+
     d = pow(a[2] - a[0], 2) + pow(a[3] - a[1], 2);
     d = sqrt(d);
-    
+
     printf("两点之间的距离%.3f\n", d);
-    
+
     return 0;
 }

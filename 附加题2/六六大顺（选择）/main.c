@@ -33,10 +33,10 @@
 
 int main() {
     int flag, input, t, l = 10;
-    
+
     scanf("%d", &t);
-    
-    for (int i = 0; i<t; i++) {
+
+    for (int i = 0; i < t; i++) {
         flag = 0;
         scanf("%d", &input);
         // 6 的倍数
@@ -61,6 +61,6 @@ int main() {
             printf("No\n");
         }
     }
-    
+
     return 0;
 }

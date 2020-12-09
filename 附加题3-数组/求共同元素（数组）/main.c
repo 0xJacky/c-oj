@@ -38,14 +38,14 @@
 #define N 1000000
 #define max(a, b) a > b ? a : b
 #define min(a, b) a < b ? a : b
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 int main() {
     int t, length, tmp, mx, mn, total;
-    
+
     scanf("%d", &t);
-    
+
     while (t--) {
         mx = INT_MIN;
         mn = INT_MAX;
@@ -65,9 +65,9 @@ int main() {
                 }
             }
         }
-        
+
         printf("%d:", total);
-        
+
         for (int i = mn; i <= mx; i++) {
             if (flag[i] >= 3) {
                 printf("%d ", i);
@@ -75,6 +75,6 @@ int main() {
         }
         printf("\n");
     }
-    
+
     return 0;
 }

@@ -46,10 +46,10 @@ int main() {
         }
         l = (int)strlen(b) - 3;
         for (int i = 0; i < 3; i++) {
-            output[i+3] = b[l+i];
+            output[i + 3] = b[l + i];
         }
         printf("%s\n", output);
     }
-    
+
     return 0;
 }

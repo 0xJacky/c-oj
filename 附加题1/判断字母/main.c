@@ -22,8 +22,8 @@
  ctype.h中的isalpha函数，可判断某个字符是否是字母，可查询该函数具体用法。
  */
 
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
 int main() {
     char input;

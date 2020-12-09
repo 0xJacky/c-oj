@@ -28,7 +28,7 @@
 #define N 3
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char* argv[]) {
     int input[N][N], ans = 0;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
         }
         ans += input[i][i];
     }
-    
+
     printf("%d\n", ans);
     return 0;
 }

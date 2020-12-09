@@ -22,26 +22,26 @@
  x1=-0.125+0.484i x2=-0.125-0.484i
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double a, b, c, x1, x2, delta, vdelta;
-    
+
     scanf("%lf %lf %lf", &a, &b, &c);
-    
+
     delta = pow(b, 2) - 4.0 * a * c;
-    
+
     if (delta >= 0) {
         vdelta = sqrt(delta);
-        x1 =  (- b + vdelta) / (2.0 * a);
-        x2 =  (- b - vdelta) / (2.0 * a);
+        x1 = (-b + vdelta) / (2.0 * a);
+        x2 = (-b - vdelta) / (2.0 * a);
         printf("x1=%.3lf x2=%.3lf\n", x1, x2);
     } else {
-        x1 = - b / (2.0 * a);
+        x1 = -b / (2.0 * a);
         vdelta = sqrt(-delta) / (2.0 * a);
         printf("x1=%.3lf+%.3lfi x2=%.3lf-%.3lfi\n", x1, vdelta, x1, vdelta);
     }
-    
+
     return 0;
 }

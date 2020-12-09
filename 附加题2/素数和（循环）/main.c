@@ -32,12 +32,12 @@
  NO
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 void prime_number(int min, int max);
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char* argv[]) {
     int t, min, max;
     scanf("%d", &t);
     for (int i = 0; i < t; i++) {

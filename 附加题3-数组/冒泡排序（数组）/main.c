@@ -50,12 +50,12 @@ int main() {
         for (int j = 0; j < length; j++) {
             scanf("%d", input + j);
         }
-        
+
         for (int a = 0; a < length - 1; a++) {
             for (int b = 0; b < length - 1 - a; b++) {
-                if (input[b] > input[b+1]) {
-                    tmp = input[b+1];
-                    input[b+1] = input[b];
+                if (input[b] > input[b + 1]) {
+                    tmp = input[b + 1];
+                    input[b + 1] = input[b];
                     input[b] = tmp;
                 }
             }

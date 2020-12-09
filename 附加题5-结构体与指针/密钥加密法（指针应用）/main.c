@@ -48,13 +48,13 @@ int isUpper(char p) {
 void encode(char *p, char *s) {
     int i = 0, j = 0, l = 0;
     char t, k;
-    
+
     while (*(s + l) != '\0') {
         l++;
     }
-    
+
     i = 0;
-    
+
     while (*(p + i) != '\0') {
         if (j > l - 1) j = 0;
         k = *(p + i) + (*(s + j) - '0');

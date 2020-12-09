@@ -26,21 +26,21 @@
 
 int main() {
     int n[10], avg = 0, o = 0;
-    
+
     for (int i = 0; i < 10; i++) {
-        scanf("%d", n+i);
+        scanf("%d", n + i);
         avg += n[i];
     }
-    
+
     avg /= 10;
-    
-    for(int i = 0; i < 10; i++) {
+
+    for (int i = 0; i < 10; i++) {
         if (n[i] > avg) {
             o++;
         }
     }
-    
+
     printf("%d\n", o);
-    
+
     return 0;
 }

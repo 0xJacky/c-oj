@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  矩阵内外（选择）
-    //
-    //  Created by Jacky on 2020/3/7.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  矩阵内外（选择）
+//
+//  Created by Jacky on 2020/3/7.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*
  题目描述
@@ -37,13 +37,12 @@ int main() {
     scanf("%d %d", &a, &b);
     scanf("%d %d", &c, &d);
     scanf("%d %d", &e, &f);
-    
+
     if (e > a && e < c && f > d && f < b) {
         printf("IN\n");
     } else {
         printf("OUT\n");
     }
-    
+
     return 0;
 }
-

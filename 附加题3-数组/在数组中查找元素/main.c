@@ -37,9 +37,9 @@
 
 int main() {
     int t, input[N], flag = 0, needle, k;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         flag = 0;
         for (int j = 0; j < N; j++) {
@@ -58,6 +58,6 @@ int main() {
             printf("Not found\n");
         }
     }
-    
+
     return 0;
 }

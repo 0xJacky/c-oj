@@ -27,12 +27,12 @@ int main() {
     int input;
     int t = 1;
     scanf("%d", &input);
-    
-    for (int i = 1; i<=input ; i++) {
+
+    for (int i = 1; i <= input; i++) {
         t *= i;
     }
 
     printf("%d!=%d\n", input, t);
-    
+
     return 0;
 }

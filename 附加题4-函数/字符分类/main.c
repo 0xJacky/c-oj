@@ -23,8 +23,8 @@
  */
 
 #define N 1000
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 #include <string.h>
 
 void f(char x[]) {

@@ -32,8 +32,8 @@
  NO
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int f(int n) {
     int ans = 1;

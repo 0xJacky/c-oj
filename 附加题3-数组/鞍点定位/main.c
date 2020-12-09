@@ -39,8 +39,8 @@
  -1
  */
 
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 int main() {
     int t, row, col, input[100][100], flag = 1;
@@ -76,13 +76,12 @@ int main() {
                 break;
             }
         }
-        
+
         if (flag) {
             printf("%d %d\n", max_i, max_j);
         } else {
             printf("-1\n");
         }
-        
     }
     return 0;
 }

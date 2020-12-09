@@ -27,11 +27,11 @@
 #include <stdio.h>
 
 int main() {
-	int a, b, c, t;
-	scanf("%d", &t);
-	for (int i = 1; i<= t; i++) {
+    int a, b, c, t;
+    scanf("%d", &t);
+    for (int i = 1; i <= t; i++) {
         scanf("%d %d %d", &a, &b, &c);
-        printf("%d\n", a+b>c&&b==c);
-	}
+        printf("%d\n", a + b > c && b == c);
+    }
     return 0;
 }

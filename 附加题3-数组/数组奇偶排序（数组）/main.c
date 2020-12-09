@@ -36,15 +36,15 @@
  */
 
 #define N 1000
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int t, n, a[N], tmp;
     scanf("%d", &t);
     while (t--) {
         scanf("%d", &n);
-        for (int i = 0 ; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             scanf("%d", a + i);
         }
         for (int i = 0, j = n - 1; j > i + 1 && i < n; i++) {
@@ -66,6 +66,3 @@ int main() {
     }
     return 0;
 }
- 
-
-

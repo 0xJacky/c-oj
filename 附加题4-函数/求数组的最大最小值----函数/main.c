@@ -36,8 +36,8 @@
  */
 
 #define N 100
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 float *f(float a[], int length) {
     static float o[2];
@@ -53,7 +53,6 @@ float *f(float a[], int length) {
     }
     return o;
 }
-
 
 int main() {
     int n;

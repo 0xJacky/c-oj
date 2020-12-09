@@ -30,25 +30,25 @@
 #include <stdio.h>
 
 float around(float h) {
-    return (int) ((h * 1000 + 5) / 10) / 100.0;
+    return (int)((h * 1000 + 5) / 10) / 100.0;
 }
 
 int main() {
     float h, s = 0;
     int n;
-    
+
     scanf("%f %d", &h, &n);
-    
+
     for (int i = 0; i < n; i++) {
         s += h;
         h = around(h / 2);
         s += h;
     }
-    
+
     // 第 n 次反弹后不需计算反弹高度
     s -= h;
-    
+
     printf("%.2f\n%.2f\n", s, h);
-    
+
     return 0;
 }

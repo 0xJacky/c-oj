@@ -22,13 +22,13 @@
  23 16 2 4
  */
 
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
 int main() {
     int alpha = 0, number = 0, space = 0, other = 0;
     char t;
-    
+
     while (1) {
         t = getchar();
         if (t == '\n') {
@@ -43,8 +43,8 @@ int main() {
             other++;
         }
     }
-    
+
     printf("%d %d %d %d\n", alpha, number, space, other);
-    
+
     return 0;
 }

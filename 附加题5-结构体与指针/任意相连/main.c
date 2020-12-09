@@ -63,26 +63,26 @@ void stringcats(char *s, char *t) {
     int i, ls = strlength(s), lt = strlength(t);
     char ans[N] = {'\0'};
     for (i = 0; i < ls; i++) {
-        ans[i] = * (s + i);
+        ans[i] = *(s + i);
     }
     for (int j = 0; j < lt; j++) {
-        ans[i++] = * (t + j);
+        ans[i++] = *(t + j);
     }
     printf("%s+%s=%s\n", s, t, ans);
 }
 
 int main() {
     char p[T][N];
-    
+
     for (int i = 0; i < T; i++) {
         scanf("%s", *(p + i));
     }
-    
+
     for (int i = 0; i < T; i++) {
         for (int j = 0; j < T; j++) {
             stringcats(*(p + i), *(p + j));
         }
     }
-    
+
     return 0;
 }

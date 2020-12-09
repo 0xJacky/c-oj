@@ -26,7 +26,8 @@ char *vowel(char a[]) {
     int i = 0, j = 0;
     static char o[N] = {'\0'};
     while (a[i] != '\0') {
-        if (a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u') {
+        if (a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' ||
+            a[i] == 'u') {
             o[j++] = a[i];
         }
         i++;
@@ -34,7 +35,7 @@ char *vowel(char a[]) {
     return o;
 }
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]) {
     char input[N], *p;
     scanf("%s", input);
     p = vowel(input);

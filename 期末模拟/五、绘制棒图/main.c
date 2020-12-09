@@ -60,9 +60,9 @@ int main() {
     while (t--) {
         scanf("%d", &n);
         for (int i = 0; i < n; i++) {
-            scanf("%d", a+i);
+            scanf("%d", a + i);
         }
-        
+
         for (int i = 0; i < n; i++) {
             printf("%4d", a[i]);
             printf("     ");

@@ -56,21 +56,21 @@ int dateToInt(struct Birdthday m) {
 int main() {
     int t;
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d %d %d", &b[i].y, &b[i].m, &b[i].d);
     }
-    
+
     for (int i = 0; i < t - 1; i++) {
         for (int j = 0; j < t - i - 1; j++) {
-            if (dateToInt(b[j]) > dateToInt(b[j+1])) {
+            if (dateToInt(b[j]) > dateToInt(b[j + 1])) {
                 tmp = b[j];
-                b[j] = b[j+1];
-                b[j+1] = tmp;
+                b[j] = b[j + 1];
+                b[j + 1] = tmp;
             }
         }
     }
-    
+
     printf("%d-%d-%d\n", b[1].y, b[1].m, b[1].d);
 
     return 0;

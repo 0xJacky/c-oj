@@ -28,7 +28,7 @@
  2
  */
 
-#define max(a,b) a > b ? a : b
+#define max(a, b) a > b ? a : b
 #include <stdio.h>
 
 float a[100];
@@ -36,8 +36,8 @@ int cache = 1;
 
 float fact(int n) {
     a[0] = 1;
-    for(int i = cache; i <= n; i++) {
-        a[i] = a[i-1] * i;
+    for (int i = cache; i <= n; i++) {
+        a[i] = a[i - 1] * i;
     }
     cache = max(cache, n);
     return a[n];
@@ -46,9 +46,9 @@ float fact(int n) {
 int main() {
     int m, n, ans;
     scanf("%d %d", &m, &n);
-    
-    ans = fact(m) / (fact(n) * fact(m-n));
-    
+
+    ans = fact(m) / (fact(n) * fact(m - n));
+
     printf("%d\n", ans);
     return 0;
 }

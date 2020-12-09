@@ -24,21 +24,22 @@
  */
 
 #define PI 3.14
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double r, h, C1, Sa, Sb, Va, Vb;
-    
+
     scanf("%lf %lf", &r, &h);
-    
+
     C1 = 2 * r * PI;
     Sa = r * r * PI;
     Sb = 4 * Sa;
     Va = (4 * Sa * r) / 3;
     Vb = Sa * h;
-    
-    printf("C1=%.2lf\nSa=%.2lf\nSb=%.2lf\nVa=%.2lf\nVb=%.2lf\n", C1, Sa, Sb, Va, Vb);
-    
+
+    printf("C1=%.2lf\nSa=%.2lf\nSb=%.2lf\nVa=%.2lf\nVb=%.2lf\n", C1, Sa, Sb, Va,
+           Vb);
+
     return 0;
 }

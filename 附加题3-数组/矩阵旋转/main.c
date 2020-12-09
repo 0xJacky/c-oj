@@ -48,7 +48,7 @@ int main() {
             getchar();
         }
     }
-    
+
     for (int b = 0; b < m; b++) {
         for (int a = n - 1; a >= 0; a--) {
             printf("%c ", input[a][b]);

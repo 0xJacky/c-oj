@@ -28,22 +28,19 @@
 #include <stdio.h>
 
 int main() {
-
     int min, max, h, t, b;
-    
+
     scanf("%d %d", &min, &max);
-    
-    for (int i = min; i<=max; i++) {
-        
+
+    for (int i = min; i <= max; i++) {
         h = i / 100;
         t = i / 10 % 10;
         b = i % 10;
-        
+
         if (h * h * h + t * t * t + b * b * b == i) {
             printf("%d\n", i);
         }
-        
     }
-    
+
     return 0;
 }

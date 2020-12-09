@@ -31,25 +31,24 @@
 
 int main() {
     int t, a, b, c, d, input;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d", &input);
-        
+
         a = input / 1000 + 5;
         b = input % 1000 / 100 + 5;
         c = input % 100 / 10 + 5;
         d = input % 100 % 10 + 5;
-        
-        if (a>=10) a %= 10;
-        if (b>=10) b %= 10;
-        if (c>=10) c %= 10;
-        if (d>=10) d %= 10;
-        
+
+        if (a >= 10) a %= 10;
+        if (b >= 10) b %= 10;
+        if (c >= 10) c %= 10;
+        if (d >= 10) d %= 10;
+
         printf("%d%d%d%d\n", d, c, b, a);
-        
     }
-    
+
     return 0;
 }

@@ -38,9 +38,9 @@ int isPalindrome(int n, int div);
 
 int main() {
     int t, n;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d", &n);
         if (isPalindrome(n, d(n))) {
@@ -66,7 +66,7 @@ int isPalindrome(int n, int div) {
     while (n != 0) {
         a = n / div;
         b = n % 10;
-        if (a!=b) {
+        if (a != b) {
             return 0;
         }
         // 掐头去尾

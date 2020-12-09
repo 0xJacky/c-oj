@@ -38,18 +38,18 @@
  1.9
  */
 
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 int main() {
     int t, length, *p1;
     char type, *p2;
     float *p3;
-    
+
     scanf("%d", &t);
     getchar();
-    
+
     while (t--) {
         scanf("%c %d", &type, &length);
         getchar();
@@ -87,6 +87,6 @@ int main() {
             printf("%.1f\n", ans);
         }
     }
-    
+
     return 0;
 }

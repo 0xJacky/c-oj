@@ -43,7 +43,7 @@
 int main() {
     int n, input[N], output[N], needle, flag = 0, k = 0;
     scanf("%d", &n);
-    
+
     for (int i = 0; i < n; i++) {
         flag = 0;
         k = 0;
@@ -52,23 +52,22 @@ int main() {
         }
         scanf("%d", &needle);
         for (int j = 0; j < N; j++) {
-            if(input[j] == needle) {
+            if (input[j] == needle) {
                 flag = 1;
             } else {
                 output[k++] = input[j];
             }
         }
-        
+
         if (flag) {
-            for (int j = 0; j < N -1; j++) {
+            for (int j = 0; j < N - 1; j++) {
                 printf("%d ", output[j]);
             }
         } else {
             printf("Not found");
         }
         printf("\n");
-        
     }
-    
+
     return 0;
 }

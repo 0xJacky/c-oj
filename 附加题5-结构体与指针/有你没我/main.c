@@ -69,7 +69,7 @@ struct Student {
 
 int strLength(char *s) {
     int a = 0;
-    while (* (s + a) != '\0') {
+    while (*(s + a) != '\0') {
         a++;
     }
     return a;
@@ -100,7 +100,7 @@ int main() {
         scanf("%c", &a[i].gender);
         getchar();
     }
-    
+
     scanf("%d", &m);
     for (int i = 0; i < m; i++) {
         scanf("%d", &b[i].id);
@@ -114,7 +114,7 @@ int main() {
             }
         }
     }
-    
+
     for (int i = 0; i < n; i++) {
         if (a[i].hide == 0) {
             printf("%d\n", a[i].id);

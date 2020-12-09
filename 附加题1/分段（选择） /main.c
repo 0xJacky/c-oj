@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  分段（选择） 分段（选择）
-    //
-    //  Created by Jacky on 2020/3/7.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  分段（选择） 分段（选择）
+//
+//  Created by Jacky on 2020/3/7.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 /*
  题目描述
  有一个函数
@@ -31,15 +31,15 @@
 int main() {
     int x, y;
     scanf("%d", &x);
-    if (x<1) {
+    if (x < 1) {
         y = x;
-    } else if (x>=1&&x<10) {
-        y = 2*x - 1;
+    } else if (x >= 1 && x < 10) {
+        y = 2 * x - 1;
     } else {
-        y = 3*x - 11;
+        y = 3 * x - 11;
     }
-    
+
     printf("%d\n", y);
-    
+
     return 0;
 }

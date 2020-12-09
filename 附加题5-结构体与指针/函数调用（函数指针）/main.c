@@ -39,8 +39,8 @@
  */
 
 #define N 100
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int sq(int n) {
     return n * n;
@@ -65,7 +65,7 @@ int main() {
     float b, (*F)(float) = _sqrt;
     char type, input[N];
     void (*S)(char *) = capital;
-    
+
     scanf("%d", &t);
     getchar();
     while (t--) {

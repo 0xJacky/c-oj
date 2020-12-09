@@ -31,24 +31,24 @@ int main() {
     int y, m, d;
     int left = 0;
     scanf("%d %d %d", &y, &m, &d);
-    
+
     if (isLeapYear(y)) {
         days[1] = 29;
     }
-    
+
     // 从下个月开始算
-    for (int i=m; i<12; i++) {
+    for (int i = m; i < 12; i++) {
         left += days[i];
     }
-    
+
     // 本月剩余
-    left += days[m-1] - d;
-    
+    left += days[m - 1] - d;
+
     printf("%d\n", left);
-    
+
     return 0;
 }
 
 int isLeapYear(int y) {
-    return (y % 4 == 0 && y % 100 !=0 ) || y % 400 == 0;
+    return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
 }

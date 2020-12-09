@@ -18,22 +18,22 @@
  样例输出
  1
  */
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int a, b, c, input;
     scanf("%d", &input);
-    
+
     a = input / 100;
-    b = (input % 100)/ 10;
+    b = (input % 100) / 10;
     c = (input % 100) % 10;
-    
+
     if (pow(a, 3) + pow(b, 3) + pow(c, 3) == input) {
         printf("1\n");
     } else {
         printf("0\n");
     }
-    
+
     return 0;
 }

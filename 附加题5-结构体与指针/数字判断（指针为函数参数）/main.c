@@ -58,7 +58,7 @@ void print(char *p, int length) {
         i++;
     }
     for (int j = i; j < length; j++) {
-        printf("%d", *(p+j) - '0');
+        printf("%d", *(p + j) - '0');
     }
     printf("\n");
 }

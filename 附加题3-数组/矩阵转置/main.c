@@ -47,7 +47,7 @@
 int main() {
     int t, m, n, input[100][100];
     scanf("%d", &t);
-    
+
     while (t--) {
         scanf("%d %d", &m, &n);
         for (int i = 0; i < m; i++) {
@@ -62,6 +62,6 @@ int main() {
             printf("\n");
         }
     }
-    
+
     return 0;
 }

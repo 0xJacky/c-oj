@@ -42,11 +42,13 @@ int main() {
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
-        scanf("%s %s %d %d %d", input[i].id, input[i].name, &input[i].s1, &input[i].s2, &input[i].s3);
+        scanf("%s %s %d %d %d", input[i].id, input[i].name, &input[i].s1,
+              &input[i].s2, &input[i].s3);
     }
-    
+
     for (int i = 0; i < n; i++) {
-        printf("%s,%s,%d,%d,%d\n", input[i].id, input[i].name, input[i].s1, input[i].s2, input[i].s3);
+        printf("%s,%s,%d,%d,%d\n", input[i].id, input[i].name, input[i].s1,
+               input[i].s2, input[i].s3);
     }
 
     return 0;

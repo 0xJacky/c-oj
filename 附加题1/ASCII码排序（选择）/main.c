@@ -30,21 +30,20 @@
 #include <stdio.h>
 
 int main() {
-    
     char input[N], t;
-    
+
     while (scanf("%s", input) != EOF) {
         for (int i = 0; i < N - 1; i++) {
             for (int j = 0; j < N - 1 - i; j++) {
                 if (input[j] > input[j + 1]) {
-                    t = input[j+1];
-                    input[j+1] = input[j];
+                    t = input[j + 1];
+                    input[j + 1] = input[j];
                     input[j] = t;
                 }
             }
         }
         printf("%c %c %c\n", input[0], input[1], input[2]);
     }
-    
+
     return 0;
 }

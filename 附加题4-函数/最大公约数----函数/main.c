@@ -19,8 +19,8 @@
  3 30
  */
 
-#define max(a,b) a > b ? a : b
-#define min(a,b) a < b ? a : b
+#define max(a, b) a > b ? a : b
+#define min(a, b) a < b ? a : b
 #include <stdio.h>
 
 int gcd(int m, int n) {
@@ -29,7 +29,7 @@ int gcd(int m, int n) {
     if (n == 0) {
         return m;
     }
-    return gcd(b, a  % b);
+    return gcd(b, a % b);
 }
 
 int main() {

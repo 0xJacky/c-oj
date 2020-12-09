@@ -19,8 +19,8 @@
  prime
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int isPrimeNumber(int n) {
     int flag = 1;

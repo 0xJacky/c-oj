@@ -41,8 +41,8 @@
  */
 
 #define N 3
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 int main() {
     int t, a[N][N], min = INT_MAX, x_i = 0, x_j = 0, x = INT_MAX;
@@ -51,14 +51,14 @@ int main() {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 scanf("%d", &a[i][j]);
-                if(a[i][j] < min) {
+                if (a[i][j] < min) {
                     min = a[i][j];
                 }
             }
         }
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if(a[i][j] > min && a[i][j] < x) {
+                if (a[i][j] > min && a[i][j] < x) {
                     x = a[i][j];
                     x_i = i;
                     x_j = j;
@@ -67,6 +67,6 @@ int main() {
         }
         printf("a[%d][%d]=%d\n", x_i, x_j, x);
     }
-    
+
     return 0;
 }

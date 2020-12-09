@@ -33,19 +33,19 @@
 
 int main() {
     int t, n, ans = 0;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d", &n);
         ans = 0;
-        for (int j = 1; j <=n; j++) {
-            if ((j % 3 != 0)&&(j % 4 != 0)&&(j % 7 == 0)) {
+        for (int j = 1; j <= n; j++) {
+            if ((j % 3 != 0) && (j % 4 != 0) && (j % 7 == 0)) {
                 ans++;
             }
         }
         printf("%d\n", ans);
     }
-    
+
     return 0;
 }

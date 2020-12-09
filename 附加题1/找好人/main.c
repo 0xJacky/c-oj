@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  找好人
-    //
-    //  Created by Jacky on 2020/3/6.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  找好人
+//
+//  Created by Jacky on 2020/3/6.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*题目描述
  某学校有四位同学中的一位做了好事，不留名，表扬信来了之后，校长问这四位是谁做的好事。四个人的回答分别是：
@@ -33,16 +33,15 @@
 #include <stdio.h>
 
 int main() {
-    
     char x;
-    
+
     scanf("%c", &x);
-    
+
     if (x == 'C') {
         printf("C is the good man!\n");
     } else {
         printf("%c is not the good man!\n", x);
     }
-    
+
     return 0;
 }

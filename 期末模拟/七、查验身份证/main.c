@@ -47,11 +47,13 @@
 #include <string.h>
 
 int main() {
-    int n, w[] = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2}, r = 0, sum, z;
-    char M[] = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'}, code[N][L] = {}, wrong[N][L] = {};
-    
+    int n, w[] = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2}, r = 0,
+           sum, z;
+    char M[] = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'},
+         code[N][L] = {}, wrong[N][L] = {};
+
     scanf("%d", &n);
-    
+
     for (int i = 0; i < n; i++) {
         scanf("%s", code[i]);
         sum = 0;
@@ -63,7 +65,7 @@ int main() {
             strcpy(wrong[r++], code[i]);
         }
     }
-    
+
     if (r > 0) {
         for (int i = 0; i < r; i++) {
             printf("%s\n", wrong[i]);
@@ -71,6 +73,6 @@ int main() {
     } else {
         printf("All passed\n");
     }
-    
+
     return 0;
 }

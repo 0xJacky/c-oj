@@ -28,25 +28,25 @@ struct Date {
 } date;
 
 int isLeapYear(int y) {
-    return (y % 4 == 0 && y % 100 !=0 ) || y % 400 == 0;
+    return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
 }
 
 int main() {
     int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}, ans = 0;
-    
+
     scanf("%d %d %d", &date.y, &date.m, &date.d);
-    
+
     if (isLeapYear(date.y)) {
         days[1] = 29;
     }
-    
+
     for (int i = 0; i < date.m - 1; i++) {
         ans += days[i];
     }
-    
+
     ans += date.d;
-    
+
     printf("%d\n", ans);
-    
+
     return 0;
 }

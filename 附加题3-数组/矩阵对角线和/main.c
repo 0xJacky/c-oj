@@ -40,7 +40,7 @@
 int main() {
     int t, n, input[100][100], ans, b, c;
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d", &n);
         ans = 0;
@@ -62,6 +62,6 @@ int main() {
         }
         printf("%d\n", ans);
     }
-    
+
     return 0;
 }

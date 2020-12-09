@@ -46,65 +46,64 @@ int isLeapYear(int y);
 
 int main() {
     int t, y, m, d, x;
-    
-        // 定义每个月的天数
+
+    // 定义每个月的天数
     int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    
+
     scanf("%d", &t);
-    
-    for (int i = 0; i<t; i++) {
+
+    for (int i = 0; i < t; i++) {
         int left = 0;
-        
+
         scanf("%d/1/1 %d", &y, &x);
         scanf("%d/%d/%d", &y, &m, &d);
-        
+
         if (isLeapYear(y)) {
             days[1] = 29;
         }
-        
-        for (int i=0; i<m-1; i++) {
+
+        for (int i = 0; i < m - 1; i++) {
             left += days[i];
         }
-        
+
         left += d;
-        
+
         printf("%d/%02d/%02d", y, m, d);
         switch ((x + (left - 1) % 7) % 7) {
             case 0:
                 printf("是星期日");
                 break;
-                
+
             case 1:
                 printf("是星期一");
                 break;
-                
+
             case 2:
                 printf("是星期二");
                 break;
-                
+
             case 3:
                 printf("是星期三");
                 break;
-                
+
             case 4:
                 printf("是星期四");
                 break;
-                
+
             case 5:
                 printf("是星期五");
                 break;
-                
+
             case 6:
                 printf("是星期六");
                 break;
-                
         }
         printf("\n");
     }
-    
+
     return 0;
 }
 
 int isLeapYear(int y) {
-    return (y % 4 == 0 && y % 100 !=0 ) || y % 400 == 0;
+    return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
 }

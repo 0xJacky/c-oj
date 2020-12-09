@@ -34,20 +34,20 @@
 
 int main() {
     int t, n, input[20], sort = 1, e, output[20], k = 0;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         sort = 1;
         scanf("%d", &n);
         for (int j = 0; j < n; j++) {
             scanf("%d", input + j);
         }
-        if (input[0] > input[n-1]) {
+        if (input[0] > input[n - 1]) {
             sort = 0;
         }
         scanf("%d", &e);
-        
+
         // 递增
         if (sort) {
             k = 0;
@@ -58,7 +58,7 @@ int main() {
                 a++;
             } else {
                 for (a = 0; a < n; a++) {
-                    if (e > input[a-1] && e < input[a]) {
+                    if (e > input[a - 1] && e < input[a]) {
                         output[a++] = e;
                         break;
                     } else {
@@ -66,11 +66,11 @@ int main() {
                     }
                 }
             }
-            
+
             for (int b = a; b <= n; b++) {
-                output[b] = input[b-1];
+                output[b] = input[b - 1];
             }
-            
+
             // 处理边界
             if (e > input[n - 1]) {
                 output[n] = e;
@@ -85,7 +85,7 @@ int main() {
                 a++;
             } else {
                 for (a = 0; a < n; a++) {
-                    if (e < input[a-1] && e > input[a]) {
+                    if (e < input[a - 1] && e > input[a]) {
                         output[a++] = e;
                         break;
                     } else {
@@ -93,23 +93,22 @@ int main() {
                     }
                 }
             }
-            
+
             for (int b = a; b <= n; b++) {
-                output[b] = input[b-1];
+                output[b] = input[b - 1];
             }
-            
-                // 处理边界
+
+            // 处理边界
             if (e < input[n - 1]) {
                 output[n] = e;
             }
         }
-        
+
         for (int j = 0; j <= n; j++) {
             printf("%d ", output[j]);
         }
         printf("\n");
-        
     }
-    
+
     return 0;
 }

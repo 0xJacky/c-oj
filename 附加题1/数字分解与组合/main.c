@@ -19,13 +19,13 @@
 
 int main() {
     int a, b, c, input;
-    
+
     scanf("%d", &input);
-    
+
     a = input / 100;
     b = (input % 100) / 10;
     c = (input % 100) % 10;
-    
+
     printf("%d%d%d\n", c, b, a);
 
     return 0;

@@ -51,17 +51,17 @@ int main() {
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                if (a[j+1]<a[j]) {
-                    tmp = a[j+1];
-                    a[j+1] = a[j];
+                if (a[j + 1] < a[j]) {
+                    tmp = a[j + 1];
+                    a[j + 1] = a[j];
                     a[j] = tmp;
                 }
             }
         }
         if (n % 2) {
-            printf("%.2f\n", a[n/2]);
+            printf("%.2f\n", a[n / 2]);
         } else {
-            printf("%.2f\n", (a[n/2]+a[n/2-1])/2);
+            printf("%.2f\n", (a[n / 2] + a[n / 2 - 1]) / 2);
         }
     }
     return 0;

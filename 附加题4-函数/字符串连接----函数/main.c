@@ -25,7 +25,7 @@
 
 char *strmerge(char a[], char b[]) {
     int i = 0, j = 0;
-    static char c[2*N] = {'\0'};
+    static char c[2 * N] = {'\0'};
     while (a[j] != '\0') {
         c[i++] = a[j];
         j++;

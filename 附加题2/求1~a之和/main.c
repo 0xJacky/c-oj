@@ -19,29 +19,28 @@
  47977.93
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int a, b, c;
     double ans = 0;
-    
+
     scanf("%d %d %d", &a, &b, &c);
-    
+
     for (int i = 1; i <= a; i++) {
         ans += i;
     }
-    
+
     for (int i = 1; i <= b; i++) {
         ans += pow(i, 2);
     }
-    
+
     for (int i = 1; i <= c; i++) {
         ans += pow(i, -1);
     }
-    
+
     printf("%.2lf\n", ans);
 
-    
     return 0;
 }

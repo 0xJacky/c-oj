@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  菜单选择（选择）
-    //
-    //  Created by Jacky on 2020/3/7.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  菜单选择（选择）
+//
+//  Created by Jacky on 2020/3/7.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*
  题目描述
@@ -60,8 +60,8 @@
  
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 void count_factorial(int a);
 void prime_number(int a, int b);
@@ -70,29 +70,29 @@ void is_leap(int a);
 int main() {
     int t;
     scanf("%d", &t);
-    for (int i = 0; i<t; i++) {
+    for (int i = 0; i < t; i++) {
         int input[3];
-        
+
         printf("1 计算n!\n2 输出素数\n3 判定闰年\n");
-        
+
         for (int j = 0; j < 3; j++) {
-            scanf("%d", input+j);
+            scanf("%d", input + j);
             if (getchar() == '\n') break;
         }
-        
+
         switch (input[0]) {
             case 1:
                 count_factorial(input[1]);
                 break;
-                
+
             case 2:
                 prime_number(input[1], input[2]);
                 break;
-                
+
             case 3:
                 is_leap(input[1]);
                 break;
-                
+
             default:
                 printf("INPUT ERROR!");
                 break;
@@ -104,8 +104,8 @@ int main() {
 
 void count_factorial(int t) {
     long long int n = 1;
-    
-    for (int i = 1; i<=t; i++) {
+
+    for (int i = 1; i <= t; i++) {
         n *= i;
     }
     printf("%lld\n", n);

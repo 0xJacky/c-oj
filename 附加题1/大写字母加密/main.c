@@ -30,12 +30,12 @@ int main() {
     char input;
     scanf("%c", &input);
     input += K;
-    
+
     if (input > 90) {
         input = 64 + input % 90;
     }
-    
+
     printf("%c\n", input);
-    
+
     return 0;
 }

@@ -40,22 +40,23 @@
 
 int main() {
     int t, d[] = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2}, tmp = 0;
-    char input[OLD+1], id[NEW+1], verify_code[] = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'};
-    
+    char input[OLD + 1], id[NEW + 1],
+        verify_code[] = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'};
+
     scanf("%d", &t);
     while (t--) {
         tmp = 0;
         scanf("%s", input);
-        for(int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++) {
             id[i] = input[i];
         }
         // 第7, 8位
         id[6] = '1';
         id[7] = '9';
-        for(int i = 6; i < OLD; i++) {
-            id[i+2] = input[i];
+        for (int i = 6; i < OLD; i++) {
+            id[i + 2] = input[i];
         }
-        
+
         for (int i = 0; i < NEW - 1; i++) {
             tmp += (id[i] - '0') * d[i];
         }
@@ -65,6 +66,6 @@ int main() {
         id[18] = '\0';
         printf("%s\n", id);
     }
-    
+
     return 0;
 }

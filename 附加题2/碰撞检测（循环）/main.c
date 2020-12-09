@@ -53,14 +53,14 @@
  y方向：| (y1 + h1 / 2 ) – (y2 + h2/2) | <= |(h1 + h2) / 2 |
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int t, x1, y1, x2, y2, x3, y3, x4, y4, w1, h1, w2, h2;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
         scanf("%d %d %d %d", &x3, &y3, &x4, &y4);
@@ -68,14 +68,15 @@ int main() {
         h2 = y4 - y3;
         w1 = x2 - x1;
         w2 = x4 - x3;
-        
-        if (fabs((double) ((x1 + w1 / 2 ) - (x3 + w2 / 2))) <= fabs((double) ((w1 + w2) / 2)) &&
-            fabs((double) ((y1 + h1 / 2 ) - (y3 + h2 / 2))) <= fabs((double) ((h1 + h2) / 2))) {
+
+        if (fabs((double)((x1 + w1 / 2) - (x3 + w2 / 2))) <=
+                fabs((double)((w1 + w2) / 2)) &&
+            fabs((double)((y1 + h1 / 2) - (y3 + h2 / 2))) <=
+                fabs((double)((h1 + h2) / 2))) {
             printf("YES\n");
         } else {
             printf("NO\n");
         }
-        
     }
 
     return 0;

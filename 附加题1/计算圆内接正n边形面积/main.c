@@ -28,18 +28,18 @@
  */
 
 #define PI 3.1415926
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double r, s;
     int n;
-    
+
     scanf("%lf,%d", &r, &n);
-    
-    s = n * pow(r, 2) * sin(2.0*PI/n) / 2.0;
-    
+
+    s = n * pow(r, 2) * sin(2.0 * PI / n) / 2.0;
+
     printf("Area=%.2lf\n", s);
-    
+
     return 0;
 }

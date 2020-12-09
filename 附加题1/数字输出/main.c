@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  数字输出
-    //
-    //  Created by Jacky on 2020/3/6.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  数字输出
+//
+//  Created by Jacky on 2020/3/6.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*
  题目描述
@@ -38,34 +38,39 @@
 
 int main() {
     int input, t[5], digits;
-    
+
     scanf("%d", &input);
-    
-    if (input / 10000) digits = 5;
-    else if (input / 1000) digits = 4;
-    else if (input / 100) digits = 3;
-    else if (input / 10) digits = 2;
-    else digits = 1;
-    
+
+    if (input / 10000)
+        digits = 5;
+    else if (input / 1000)
+        digits = 4;
+    else if (input / 100)
+        digits = 3;
+    else if (input / 10)
+        digits = 2;
+    else
+        digits = 1;
+
     t[4] = input / 10000;
     t[3] = input / 1000 % 10;
     t[2] = input / 100 % 10;
     t[1] = input / 10 % 10;
     t[0] = input % 10;
-    
+
     printf("%d\n", digits);
-    
-    for (int i = digits-1; i > -1; i--) {
+
+    for (int i = digits - 1; i > -1; i--) {
         printf("%d ", t[i]);
     }
-    
+
     printf("\n");
-    
+
     for (int i = 0; i < digits; i++) {
         printf("%d", t[i]);
     }
-    
+
     printf("\n");
-    
+
     return 0;
 }

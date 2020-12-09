@@ -66,7 +66,7 @@ int main() {
     char *p;
     scanf("%d", &t);
     getchar();
-    
+
     for (int i = 0; i < t; i++) {
         length = 0;
         k = 0;
@@ -79,7 +79,7 @@ int main() {
             getchar();
             length += s[j].max - s[j].min + 1;
         }
-        p = (char *)malloc((length+1) * sizeof(char));
+        p = (char *)malloc((length + 1) * sizeof(char));
         for (int j = 0; j < 3; j++) {
             for (int a = s[j].min - 1; a < s[j].max; a++) {
                 *(p + k++) = s[j].string[a];
@@ -88,6 +88,6 @@ int main() {
         *(p + k) = '\0';
         printf("%s\n", p);
     }
-    
+
     return 0;
 }

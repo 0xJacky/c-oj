@@ -36,9 +36,9 @@
  14 91
  */
 
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 int main() {
     int t, m, n, **p, min, max;
@@ -60,9 +60,9 @@ int main() {
                 }
             }
         }
-        
+
         printf("%d %d\n", min, max);
-        
+
         for (int i = 0; i < m; i++) {
             free(*(p + i));
         }

@@ -31,28 +31,28 @@
  20.00
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int t;
     double x, ans = 0;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%lf", &x);
-        if ( x < 0 ) {
+        if (x < 0) {
             ans = fabs(x);
-        } else if ( x >= 0 && x < 1) {
+        } else if (x >= 0 && x < 1) {
             ans = sin(2.0 * x);
-        } else if ( x >= 1 && x < 5 ) {
+        } else if (x >= 1 && x < 5) {
             ans = sqrt(pow(x, 3) + x);
         } else {
             ans = 2 * x + 10;
         }
         printf("%.2lf\n", ans);
     }
-    
+
     return 0;
 }

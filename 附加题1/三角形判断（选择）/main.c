@@ -32,9 +32,9 @@
  */
 
 #define EPSILON 0.001
-#include <stdio.h>
-#include <math.h>
 #include <float.h>
+#include <math.h>
+#include <stdio.h>
 
 int isEqual(double a, double b);
 int isTriangle(double a, double b, double c);
@@ -45,15 +45,15 @@ int isEquilateralTriangle(double a, double b, double c);
 
 int main() {
     double a, b, c;
-    
+
     scanf("%lf", &a);
     scanf("%lf", &b);
     scanf("%lf", &c);
-    
+
     if (isTriangle(a, b, c)) {
         if (isIsoscelesRightTriangle(a, b, c)) {
             printf("等腰直角三角形");
-        } else if(isEquilateralTriangle(a, b, c)) {
+        } else if (isEquilateralTriangle(a, b, c)) {
             printf("等边三角形");
         } else if (isIsoscelesTriangle(a, b, c)) {
             printf("等腰三角形");
@@ -66,12 +66,12 @@ int main() {
     } else {
         printf("非三角形\n");
     }
-    
+
     return 0;
 }
 
 int isEqual(double a, double b) {
-    if (fabs(a-b) < EPSILON) {
+    if (fabs(a - b) < EPSILON) {
         return 1;
     }
     return 0;
@@ -81,27 +81,25 @@ int isTriangle(double a, double b, double c) {
     return (a + b > c) && (a + c > b) && (b + c > a);
 }
 
-    // 等腰
+// 等腰
 int isIsoscelesTriangle(double a, double b, double c) {
     return isEqual(a, b) || isEqual(a, c) || isEqual(b, c);
 }
 
-    // 直角
+// 直角
 int isRightTriangle(double a, double b, double c) {
-    double sa = a*a;
-    double sb = b*b;
-    double sc = c*c;
+    double sa = a * a;
+    double sb = b * b;
+    double sc = c * c;
     return isEqual(sa + sb, sc) || isEqual(sa + sc, sb) || isEqual(sb + sc, sa);
 }
 
-    // 等腰直角
+// 等腰直角
 int isIsoscelesRightTriangle(double a, double b, double c) {
     return isIsoscelesTriangle(a, b, c) && isRightTriangle(a, b, c);
-    
 }
 
-    // 等边三角形
+// 等边三角形
 int isEquilateralTriangle(double a, double b, double c) {
     return isEqual(a, b) && isEqual(b, c);
 }
-

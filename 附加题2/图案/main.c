@@ -34,12 +34,12 @@ int main() {
     int n, l, m, o = 0;
 
     scanf("%d", &n);
-    
-    for (int i=1; i<=n; i++) {
+
+    for (int i = 1; i <= n; i++) {
         l = 2 * i - 1;
         m = 2 * n - 1;
         o = 0;
-        for (int j=1; j <= m; j++) {
+        for (int j = 1; j <= m; j++) {
             if (j <= ((m - l) / 2) || (o >= l)) {
                 printf(" ");
             } else {
@@ -49,6 +49,6 @@ int main() {
         }
         printf("\n");
     }
-    
+
     return 0;
 }

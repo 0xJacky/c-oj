@@ -29,9 +29,9 @@
  48265
  */
 
-#include <stdio.h>
-#include <math.h>
 #include <ctype.h>
+#include <math.h>
+#include <stdio.h>
 
 int main() {
     int t;
@@ -46,7 +46,7 @@ int main() {
         }
         int j = length;
         while (j--) {
-            if(isalpha(o[j])) {
+            if (isalpha(o[j])) {
                 b = o[j] - 55;
             } else if (o[j] == '-') {
                 s = 1;
@@ -57,7 +57,7 @@ int main() {
             ans += b * pow(16, a);
             a++;
         }
-        
+
         if (s) {
             printf("-");
         }

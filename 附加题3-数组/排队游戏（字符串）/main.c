@@ -39,7 +39,7 @@ int main() {
     scanf("%s", a);
     int i = 1;
     while (a[i] != '\0') {
-        if(a[i]!=a[0]) {
+        if (a[i] != a[0]) {
             for (int j = i; j > 0; j--) {
                 if (a[j] == a[0]) {
                     a[j] = a[i];

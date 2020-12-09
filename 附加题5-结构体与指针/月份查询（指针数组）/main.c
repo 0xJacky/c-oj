@@ -46,10 +46,12 @@
 
 int main() {
     int t, n;
-    char *m[12] = {"January", "February", "March", "April", "May", "June", "July", "Aguest", "September", "October", "November", "December"};
-    
+    char *m[12] = {"January",   "February", "March",    "April",
+                   "May",       "June",     "July",     "Aguest",
+                   "September", "October",  "November", "December"};
+
     scanf("%d", &t);
-    
+
     while (t--) {
         scanf("%d", &n);
         if (n > 0 && n <= 12) {
@@ -58,6 +60,6 @@ int main() {
             printf("error\n");
         }
     }
-    
+
     return 0;
 }

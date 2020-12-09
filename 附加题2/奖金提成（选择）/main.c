@@ -47,13 +47,13 @@
 
 int main() {
     int t, profits, bonus = 0;
-    
+
     scanf("%d", &t);
-    
+
     for (int i = 0; i < t; i++) {
         scanf("%d", &profits);
         bonus = 0;
-        
+
         switch (profits / 10000) {
             default:
             case 10:
@@ -81,10 +81,8 @@ int main() {
                 bonus += profits / 10;
                 break;
         }
-        
 
         printf("%d\n", bonus);
-        
     }
 
     return 0;

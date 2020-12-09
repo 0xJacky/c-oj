@@ -28,20 +28,20 @@
  x1=1.00 x2=-1.00
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double a, b, c, vdelta, x1, x2;
-    
+
     scanf("%lf %lf %lf", &a, &b, &c);
-    
+
     vdelta = sqrt(pow(b, 2) - 4 * a * c);
-    
+
     x1 = (-b + vdelta) / (2.0 * a);
     x2 = (-b - vdelta) / (2.0 * a);
-    
+
     printf("x1=%.2lf x2=%.2lf\n", x1, x2);
-    
+
     return 0;
 }

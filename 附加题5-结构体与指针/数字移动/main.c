@@ -37,7 +37,7 @@ void moveValue(int *input, int n, int m) {
     printf("\n");
 }
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]) {
     int n, m, input[N];
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {

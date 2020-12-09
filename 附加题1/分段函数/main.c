@@ -1,10 +1,10 @@
-    //
-    //  main.c
-    //  分段函数
-    //
-    //  Created by Jacky on 2020/3/5.
-    //  Copyright © 2020 Jacky. All rights reserved.
-    //
+//
+//  main.c
+//  分段函数
+//
+//  Created by Jacky on 2020/3/5.
+//  Copyright © 2020 Jacky. All rights reserved.
+//
 
 /*
  题目描述
@@ -26,18 +26,18 @@
 
 int main() {
     int x, y;
-    
+
     scanf("%d", &x);
-    
-    if (x<1) {
+
+    if (x < 1) {
         y = x;
-    } else if (x>=1&&x<12) {
-        y = 3*x-1;
+    } else if (x >= 1 && x < 12) {
+        y = 3 * x - 1;
     } else {
-        y = 4*x-11;
+        y = 4 * x - 11;
     }
-    
+
     printf("x=%d,y=%d\n", x, y);
-    
+
     return 0;
 }

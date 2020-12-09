@@ -24,15 +24,15 @@
 
 int main() {
     char c[6];
-    
-    for (int i=0; i<5; i++) {
-        scanf("%c", c+i);
+
+    for (int i = 0; i < 5; i++) {
+        scanf("%c", c + i);
         c[i] += 4;
     }
-    
+
     c[5] = '\0';
-    
+
     printf("%s\n", c);
-    
+
     return 0;
 }

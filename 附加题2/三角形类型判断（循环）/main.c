@@ -40,9 +40,9 @@
  */
 
 #define EPSILON 0.001
-#include <stdio.h>
-#include <math.h>
 #include <float.h>
+#include <math.h>
+#include <stdio.h>
 
 double countSize(double a, double b, double c);
 int isEqual(double a, double b);
@@ -55,15 +55,15 @@ int isEquilateralTriangle(double a, double b, double c);
 int main() {
     int n;
     double a, b, c;
-    
+
     scanf("%d", &n);
-    
-    for (int i = 0; i<n; i++) {
+
+    for (int i = 0; i < n; i++) {
         scanf("%lf %lf %lf", &a, &b, &c);
         if (isTriangle(a, b, c)) {
             if (isIsoscelesRightTriangle(a, b, c)) {
                 printf("isosceles right triangle, ");
-            } else if(isEquilateralTriangle(a, b, c)) {
+            } else if (isEquilateralTriangle(a, b, c)) {
                 printf("equilateral triangle, ");
             } else if (isIsoscelesTriangle(a, b, c)) {
                 printf("isosceles triangle, ");
@@ -77,19 +77,19 @@ int main() {
             printf("no triangle\n");
         }
     }
-    
+
     return 0;
 }
 
 double countSize(double a, double b, double c) {
     double p, s;
     p = (a + b + c) / 2.0;
-    s = sqrt((p-a)*(p-b)*(p-c)*p);
+    s = sqrt((p - a) * (p - b) * (p - c) * p);
     return s;
 }
 
 int isEqual(double a, double b) {
-    if (fabs(a-b) < EPSILON) {
+    if (fabs(a - b) < EPSILON) {
         return 1;
     }
     return 0;
@@ -99,26 +99,25 @@ int isTriangle(double a, double b, double c) {
     return (a + b > c) && (a + c > b) && (b + c > a);
 }
 
-    // 等腰
+// 等腰
 int isIsoscelesTriangle(double a, double b, double c) {
     return isEqual(a, b) || isEqual(a, c) || isEqual(b, c);
 }
 
-    // 直角
+// 直角
 int isRightTriangle(double a, double b, double c) {
-    double sa = a*a;
-    double sb = b*b;
-    double sc = c*c;
+    double sa = a * a;
+    double sb = b * b;
+    double sc = c * c;
     return isEqual(sa + sb, sc) || isEqual(sa + sc, sb) || isEqual(sb + sc, sa);
 }
 
-    // 等腰直角
+// 等腰直角
 int isIsoscelesRightTriangle(double a, double b, double c) {
     return isIsoscelesTriangle(a, b, c) && isRightTriangle(a, b, c);
-    
 }
 
-    // 等边三角形
+// 等边三角形
 int isEquilateralTriangle(double a, double b, double c) {
     return isEqual(a, b) && isEqual(b, c);
 }

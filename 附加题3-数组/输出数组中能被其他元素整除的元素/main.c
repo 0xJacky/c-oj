@@ -34,11 +34,11 @@
 
 int main() {
     int input[N], flag = 0;
-    
+
     for (int i = 0; i < N; i++) {
         scanf("%d", input + i);
     }
-    
+
     for (int i = 0; i < N; i++) {
         flag = 0;
         for (int j = 0; j < N; j++) {
@@ -49,11 +49,11 @@ int main() {
                 flag = 1;
             }
         }
-        
+
         if (flag) {
             printf("%d\n", input[i]);
         }
     }
-    
+
     return 0;
 }

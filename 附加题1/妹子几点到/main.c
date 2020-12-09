@@ -29,7 +29,7 @@
 
 int main() {
     int h, m, s;
-    scanf("%d:%d:%d",&h,&m,&s);
+    scanf("%d:%d:%d", &h, &m, &s);
     if (s + 15 >= 60) {
         s = (s + 15) % 60;
         m++;
@@ -46,6 +46,6 @@ int main() {
         h = h % 24;
     }
     printf("%d:%d:%d\n", h, m, s);
-    
+
     return 0;
 }

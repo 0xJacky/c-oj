@@ -33,7 +33,7 @@ void moveValue(int input[], int n, int m) {
         printf("%d ", input[i]);
     }
     for (int i = m; i < n; i++) {
-        printf("%d ", input[i-m]);
+        printf("%d ", input[i - m]);
     }
     printf("\n");
 }

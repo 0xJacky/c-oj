@@ -6,7 +6,6 @@
 //  Copyright © 2020 Jacky. All rights reserved.
 //
 
-
 /*
   题目描述
   输入3个浮点数，求它们的平均值
@@ -23,9 +22,9 @@
 int main() {
     float a[T], avg = 0;
     for (int i = 0; i < T; i++) {
-        scanf("%f", a+i);
+        scanf("%f", a + i);
         avg += a[i];
     }
-    printf("%.2f\n", avg/T);
+    printf("%.2f\n", avg / T);
     return 0;
 }

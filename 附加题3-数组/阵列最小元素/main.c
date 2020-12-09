@@ -31,9 +31,9 @@
  -123 3 4
  */
 
-#include <stdio.h>
-#include <limits.h>
 #include <ctype.h>
+#include <limits.h>
+#include <stdio.h>
 
 int main() {
     int t, n, m, min_i, min_j, min;

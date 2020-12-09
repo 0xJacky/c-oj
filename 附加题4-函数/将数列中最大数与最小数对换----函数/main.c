@@ -20,8 +20,8 @@
  */
 
 #define N 10
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
 
 int input[N], min = INT_MAX, max = INT_MIN, min_i, max_i, t;
 
@@ -29,13 +29,13 @@ void handle() {
     t = input[0];
     input[0] = min;
     input[min_i] = t;
-    
+
     if (max_i == 0) {
         max_i = min_i;
     }
-    
-    t = input[N-1];
-    input[N-1] = max;
+
+    t = input[N - 1];
+    input[N - 1] = max;
     input[max_i] = t;
 }
 

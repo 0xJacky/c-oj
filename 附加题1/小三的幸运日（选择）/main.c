@@ -33,14 +33,13 @@ int isLuckDay(int y, int m, int d);
 int main() {
     int y, m, d;
     scanf("%d-%d-%d", &y, &m, &d);
-    
+
     if (isLuckDay(y, m, d)) {
         printf("YES\n");
     } else {
         printf("NO\n");
     }
-    
-    
+
     return 0;
 }
 

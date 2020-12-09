@@ -23,16 +23,16 @@
  2468
  */
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     int a, n, ans = 0, t = 0;
     scanf("%d", &a);
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++ ) {
+    for (int i = 1; i <= n; i++) {
         t = 0;
-        for (int j = 0; j < i; j++ ) {
+        for (int j = 0; j < i; j++) {
             t += a * pow(10, j);
         }
         ans += t;

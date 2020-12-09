@@ -37,9 +37,9 @@
 int main() {
     int n, a = 0, b = 0, c = 0;
     char Li[] = "Li", Zhang[] = "Zhang", Fu[] = "Fu";
-    
+
     scanf("%d", &n);
-    
+
     for (int i = 0; i < n; i++) {
         char vote[10] = {'\0'};
         scanf("%s", vote);
@@ -51,8 +51,8 @@ int main() {
             c++;
         }
     }
-    
+
     printf("Li:%d\nZhang:%d\nFu:%d\n", a, b, c);
-    
+
     return 0;
 }

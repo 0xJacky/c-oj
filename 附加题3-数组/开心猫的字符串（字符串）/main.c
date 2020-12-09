@@ -39,10 +39,10 @@ int main() {
     while (scanf("%s", input) != EOF) {
         a = 0;
         while (input[a] != '\0' && a + 2 < N) {
-            if (input[a] == 's' && input[a+1] == 'z' && input[a+2] == 'u') {
+            if (input[a] == 's' && input[a + 1] == 'z' && input[a + 2] == 'u') {
                 input[a] = 'S';
-                input[a+1] = 'Z';
-                input[a+2] = 'U';
+                input[a + 1] = 'Z';
+                input[a + 2] = 'U';
             }
             a++;
         }

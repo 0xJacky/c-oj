@@ -22,13 +22,13 @@
  4.189
  */
 #define PI 3.14159265358979323846
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
     double r;
     scanf("%lf", &r);
     // OJ 不能用 M_PI
-    printf("%.3lf\n", (4*PI*pow(r, 3))/3);
+    printf("%.3lf\n", (4 * PI * pow(r, 3)) / 3);
     return 0;
 }

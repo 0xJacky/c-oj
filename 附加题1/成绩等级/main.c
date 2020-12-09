@@ -29,16 +29,16 @@ int main() {
     int t;
     float score;
     char grade;
-    
+
     scanf("%d", &t);
-    
-    for (int i = 0; i<t; i++) {
+
+    for (int i = 0; i < t; i++) {
         scanf("%f", &score);
-        switch ((int)score/10) {
+        switch ((int)score / 10) {
             case 9:
                 grade = 'A';
                 break;
-                
+
             case 8:
                 grade = 'B';
                 break;
@@ -54,6 +54,6 @@ int main() {
         }
         printf("score:%.1f,grade:%c\n", score, grade);
     }
-    
+
     return 0;
 }

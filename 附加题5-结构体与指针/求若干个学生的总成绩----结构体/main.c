@@ -40,9 +40,10 @@ int sum(struct Student s) {
 int main() {
     int n, s1 = 0, s2 = 0, s3 = 0;
     scanf("%d", &n);
-    
+
     for (int i = 0; i < n; i++) {
-        scanf("%s %s %d %d %d", student[i].id, student[i].name, &student[i].s1, &student[i].s2, &student[i].s3);
+        scanf("%s %s %d %d %d", student[i].id, student[i].name, &student[i].s1,
+              &student[i].s2, &student[i].s3);
         s1 += student[i].s1;
         s2 += student[i].s2;
         s3 += student[i].s3;
